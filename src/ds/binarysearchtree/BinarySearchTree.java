@@ -19,4 +19,14 @@ public class BinarySearchTree {
             return this.root.find(value);
         }
     }
+    
+    public void printTree(Node node) {
+        if (node != null) {
+            printTree(node.left);
+            
+            System.out.println(node);
+            
+            printTree(node.right);
+        }
+    }
 }

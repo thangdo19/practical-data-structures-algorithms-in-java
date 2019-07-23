@@ -13,9 +13,11 @@ public class App {
     public static void main(String args[]) {
 		BinarySearchTree bst = new BinarySearchTree();
 		bst.insert("b");
-		bst.insert("c");
 		bst.insert("a");
+		bst.insert("d");
+//		bst.insert("c");
+
                 
-                System.out.println(bst.find("a"));
+                bst.printTree(bst.root);
     }
 }

@@ -45,7 +45,7 @@ public class Node {
     }
     
     public boolean isLessThanOrEqualTo(String value) {
-        int compare = this.value.compareTo(value);
+        int compare = value.compareTo(this.value);
         
         return (compare <= 0); // <= 0 return true else return false
     }
