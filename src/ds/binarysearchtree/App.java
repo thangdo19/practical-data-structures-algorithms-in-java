@@ -15,9 +15,9 @@ public class App {
 		bst.insert("b");
 		bst.insert("a");
 		bst.insert("d");
-//		bst.insert("c");
+		bst.insert("c");
 
                 
-                bst.printTree(bst.root);
+                bst.postOrderTraverseTree(bst.root);
     }
 }

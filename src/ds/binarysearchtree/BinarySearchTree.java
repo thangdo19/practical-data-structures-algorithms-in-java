@@ -20,13 +20,31 @@ public class BinarySearchTree {
         }
     }
     
-    public void printTree(Node node) {
+    public void inOrderTraverseTree(Node node) {
         if (node != null) {
-            printTree(node.left);
+            inOrderTraverseTree(node.left);
             
             System.out.println(node);
             
-            printTree(node.right);
+            inOrderTraverseTree(node.right);
+        }
+    }
+    
+    public void preOrderTraverseTree(Node node) {
+        if (node != null) {
+            System.out.println(node);
+            
+            preOrderTraverseTree(node.left);
+            preOrderTraverseTree(node.right);
+        }
+    }
+    
+    public void postOrderTraverseTree(Node node) {
+        if (node != null) {
+            postOrderTraverseTree(node.left);
+            postOrderTraverseTree(node.right);
+            
+            System.out.println(node);
         }
     }
 }
